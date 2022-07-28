@@ -37,8 +37,10 @@ struct CardView: View {
             .cornerRadius(10)
             Text(title)
                 .font(.headline)
+                .foregroundColor(.black)
             Text(published.puppyDate)
                 .font(.subheadline)
+                .foregroundColor(.gray)
         }
         
     }

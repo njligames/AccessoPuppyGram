@@ -14,6 +14,7 @@ struct PuppyGramDetailView: View {
         VStack {
             Text(item.title)
                 .font(.largeTitle)
+                .foregroundColor(.black)
             AsyncImage(url: URL(string: item.media.m), transaction: Transaction(animation: .spring())) { phase in
                 switch phase {
                 case .empty:
@@ -38,8 +39,10 @@ struct PuppyGramDetailView: View {
             .cornerRadius(10)
             Text(item.author)
                 .font(.title)
+                .foregroundColor(.black)
             Text(item.published.puppyDate)
                 .font(.title2)
+                .foregroundColor(.gray)
             
         }
         
